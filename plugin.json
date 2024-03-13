@@ -1,6 +1,6 @@
 {
     "name": "Task Toxicity",
-    "url": "https://github.com/minuva/toxicity-plugin",
+    "url": "https://github.com/minuva/ph-toxicity-plugin",
     "description": "Get user and agent toxicity in a conversation",
     "main": "index.js",
     "config": [
