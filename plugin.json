@@ -1,7 +1,7 @@
 {
     "name": "Task Toxicity",
     "url": "https://github.com/minuva/ph-toxicity-plugin",
-    "description": "Get user and agent toxicity in a conversation",
+    "description": "Get user and agent toxicity",
     "main": "index.js",
     "config": [
         {
