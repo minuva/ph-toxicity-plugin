@@ -1,0 +1,15 @@
+{
+    "name": "Task Toxicity",
+    "url": "https://github.com/minuva/toxicity-plugin",
+    "description": "Get user and agent toxicity in a conversation",
+    "main": "index.js",
+    "config": [
+        {
+            "key": "API_SERVER_URL",
+            "name": "HOSTNAME URL",
+            "type": "string",
+            "default": "https://ml-ph-cloudrun-app-qnb6bcsgwa-ey.a.run.app",
+            "required": true
+        }
+    ]
+}
