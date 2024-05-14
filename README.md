@@ -1,26 +1,15 @@
-## How to develop
+## Toxicity Task Plugin
 
-All of the plugin's code is located in the `index.js` file, which is JavaScript ran inside of PostHog.
-To get yourself up to speed with this environment, we sincerely recommend checking out our [Plugins overview in PostHog Docs]([the Plugins Overview](https://posthog.com/docs/plugins/build/overview).
-For a crash course, read our [plugin building tutorial in PostHog Docs](https://posthog.com/docs/plugins/build/tutorial).
+This plugin allows you to track an toxic interactions between a user and a LLM into [PostHog-LLM](https://github.com/postlang/posthog-llm) or [PostHog-LLM-Lite](https://github.com/postlang/posthog-llm-lite). To use this plugin in PostHog-LLM, simply install the [plugin's](https://github.com/minuva/fast-nlp-text-toxicity) backend, it runs the machine learning model for toxicity classification. The plugin links the PostHog data ingestion process with the hosted machine learning model.
 
-## How to test
 
-To test the plugin, you'll need to install a few `npm` dependencies already specified in `package.json`:
-```bash
-npm install
-```
+## How to install in PostHog-LLM
 
-This will get you the testing library Jest and some our test helpers.
-Then to run tests it's just:
+1. Open PostHog-LLM.
+2. Open the Data pipeline page from the sidebar.
+3. Head to the Manage apps tab.
+4. Install app advanced button
+5. "Install from GitHub, GitLab or npm" using this repository's URL.
+6. Click on apps Apps tab, and it will prompt with API_SERVER_URL (e.g. http://localhost:9612).
 
-```bash
-npm test
-```
-
-## How to install
-
-1. Open PostHog.
-1. Open the Plugins page from the sidebar.
-1. Head to the Advanced tab.
-1. "Install from GitHub, GitLab or npm" using this repository's URL.
+![Example](img/toxic.gif)
