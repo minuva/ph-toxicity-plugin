@@ -44,9 +44,6 @@ function isValidURL(url) {
     const isIPAddress = /^(\d{1,3}\.){3}\d{1,3}$/.test(urlObject.hostname);
     const isLocalhost = urlObject.hostname === 'localhost';
 
-    // Check if the hostname is a valid domain name
-    const isValidDomain = /^([a-z0-9]+(-[a-z0-9]+)*\.)+[a-z]{2,}$/.test(urlObject.hostname);
-
     // If the protocol is not http or https, return false
     if (!isHttpOrHttps) {
       return false;
@@ -58,7 +55,7 @@ function isValidURL(url) {
     }
 
     // If the hostname is not a valid domain name, IP address, or localhost, return false
-    if (!isValidDomain && !isIPAddress && !isLocalhost) {
+    if (!urlObject.hostname && !isIPAddress && !isLocalhost) {
       return false;
     }
 
